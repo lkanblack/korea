@@ -1,0 +1,100 @@
+main {
+    background: url(../img/top-bg.png) center no-repeat;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+    height: 660px;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 26px 0px;
+    nav {
+        display: flex;
+        align-items: center;
+        .nav-item {
+            display: flex;
+            align-items: center;
+            align-content: center;
+            margin-left: 32px;
+            embed {
+                margin-right: 12px;
+            }
+            a {
+                font-size: 16px;
+                line-height: 22px;
+                color: #fff;
+                text-decoration: none;
+            }
+        }
+    }
+}
+.main {
+    margin-top: 50px;
+    display: flex;
+    position: relative;
+    .top-title {
+        display: inline-block;
+        padding: 2px 14px;
+        color: #000;
+        background-color: #F7DC06;
+        margin-bottom: 18px;
+        font-size: 32px;
+        line-height: 44px;
+    }
+    h1 {
+        font-family: 'Black Han Sans', sans-serif;
+        color: #FF4A51;
+        font-size: 104px;
+        line-height: 120px;
+        -webkit-text-stroke: 5px #fff;
+        font-weight: 900;
+        width: 550px;
+    }
+    .sub-title {
+        color: #009EFF;
+        font-size: 24px;
+        display: inline-block;
+    }
+    
+}
+.games {
+    background-color: #FF4A51;
+    margin-top: -100px;
+    padding: 96px 0px;
+    &-header {
+        display: flex;
+        align-items: center;
+        embed {
+            margin-right: 40px;
+        }
+        .descr {
+
+            h3 {
+                font-family: 'Black Han Sans', sans-serif;
+                color: #F6FF6E;
+                font-size: 40px;
+                line-height: 50px;
+            }
+            p {
+                color: #fff;
+                font-size: 20px;
+                line-height: 28px;
+                margin: 0;
+            }
+        }
+    }
+    &-blocks {
+        margin-top: 72px;
+        .block {
+            position: relative;
+            embed {
+                position: absolute;
+                margin-top: -40px;
+            }
+            width: 384px;
+            height: 761px;
+            background-color: #fff;
+            border-radius: 24px;
+        }
+    }
+}

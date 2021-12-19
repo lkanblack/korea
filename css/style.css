@@ -1,0 +1,136 @@
+main {
+  background: url(../img/top-bg.png) center no-repeat;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+  height: 660px;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 26px 0px;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav .nav-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin-left: 32px;
+}
+
+header nav .nav-item embed {
+  margin-right: 12px;
+}
+
+header nav .nav-item a {
+  font-size: 16px;
+  line-height: 22px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.main {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.main .top-title {
+  display: inline-block;
+  padding: 2px 14px;
+  color: #000;
+  background-color: #F7DC06;
+  margin-bottom: 18px;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.main h1 {
+  font-family: 'Black Han Sans', sans-serif;
+  color: #FF4A51;
+  font-size: 104px;
+  line-height: 120px;
+  -webkit-text-stroke: 5px #fff;
+  font-weight: 900;
+  width: 550px;
+}
+
+.main .sub-title {
+  color: #009EFF;
+  font-size: 24px;
+  display: inline-block;
+}
+
+.games {
+  background-color: #FF4A51;
+  margin-top: -100px;
+  padding: 96px 0px;
+}
+
+.games-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.games-header embed {
+  margin-right: 40px;
+}
+
+.games-header .descr h3 {
+  font-family: 'Black Han Sans', sans-serif;
+  color: #F6FF6E;
+  font-size: 40px;
+  line-height: 50px;
+}
+
+.games-header .descr p {
+  color: #fff;
+  font-size: 20px;
+  line-height: 28px;
+  margin: 0;
+}
+
+.games-blocks {
+  margin-top: 72px;
+}
+
+.games-blocks .block {
+  position: relative;
+  width: 384px;
+  height: 761px;
+  background-color: #fff;
+  border-radius: 24px;
+}
+
+.games-blocks .block embed {
+  position: absolute;
+  margin-top: -40px;
+}
+/*# sourceMappingURL=style.css.map */
