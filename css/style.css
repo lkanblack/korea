@@ -93,6 +93,7 @@ header nav .nav-item a {
   background-color: #FF4A51;
   margin-top: -100px;
   padding: 96px 0px;
+  height: 1300px;
 }
 
 .games-header {
@@ -311,5 +312,155 @@ header nav .nav-item a {
   background-color: #502AC8;
   border: none;
   border-bottom: 5px solid #3C1F98;
+}
+
+.play {
+  background: url(../img/games/bue-bg.png) center no-repeat;
+  text-align: center;
+  padding-top: 170px;
+}
+
+.play-banner {
+  margin: 0 auto;
+  background: url(../img/games/feautes-bg-clean.png) center no-repeat;
+  width: 1200px;
+  height: 220px;
+  display: inline-block;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.play-banner .red-text {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-left: 56px;
+}
+
+.play-banner .red-text p {
+  color: #fff;
+  font-family: 'Black Han Sans', sans-serif;
+  font-size: 32px;
+  line-height: 40px;
+  -webkit-text-stroke: 2px #FF4A51;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 20px;
+}
+
+.play-banner .red-text embed {
+  position: absolute;
+  top: -93px;
+}
+
+.play-banner_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  width: 264px;
+}
+
+.play-banner_block h3 {
+  margin-top: 17px;
+  margin-bottom: 8px;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 700;
+  -webkit-text-stroke: 1px #6DCB60;
+}
+
+.play-banner_block span {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+}
+
+.play-title {
+  margin-top: 74px;
+}
+
+.play-title h1 {
+  font-family: 'Black Han Sans', sans-serif;
+  color: #F6FF6E;
+  font-size: 60px;
+  line-height: 75px;
+  margin-bottom: 5px;
+}
+
+.play-title p {
+  font-size: 20px;
+  line-height: 28px;
+  color: #fff;
+}
+
+.play-gifts {
+  padding: 0px 12px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 134px;
+}
+
+.play-gifts .gift {
+  background-color: #FFFAD1;
+  position: relative;
+  width: 352px;
+  text-align: left;
+  padding: 60px 34px 26px 34px;
+  border-radius: 0px 0px 20px 20px;
+  margin-bottom: 129px;
+}
+
+.play-gifts .gift img {
+  position: absolute;
+  top: -80px;
+  left: -16px;
+}
+
+.play-gifts .gift h3 {
+  color: #fff;
+  font-size: 22px;
+  line-height: 30px;
+  font-weight: 700;
+  -webkit-text-stroke: 1px #FF4A51;
+}
+
+.play-gifts .gift ul {
+  margin: 0;
+}
+
+.play-gifts .gift ul li {
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
 }
 /*# sourceMappingURL=style.css.map */
