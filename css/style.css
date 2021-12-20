@@ -1,3 +1,8 @@
+* {
+  font-family: 'Noto Sans', sans-serif;
+  color: #262626;
+}
+
 main {
   background: url(../img/top-bg.png) center no-repeat;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
@@ -119,18 +124,192 @@ header nav .nav-item a {
 
 .games-blocks {
   margin-top: 72px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .games-blocks .block {
-  position: relative;
   width: 384px;
-  height: 761px;
+  height: auto;
   background-color: #fff;
   border-radius: 24px;
 }
 
-.games-blocks .block embed {
-  position: absolute;
+.games-blocks .block p {
+  margin: 0;
+}
+
+.games-blocks .block-img {
   margin-top: -40px;
+}
+
+.games-blocks .block-body {
+  padding: 32px;
+}
+
+.games-blocks .block .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.games-blocks .block .header .text {
+  margin-left: 32px;
+}
+
+.games-blocks .block .header .text h2 {
+  font-family: 'Black Han Sans', sans-serif;
+  font-size: 38px;
+  line-height: 48px;
+  color: #FF4A51;
+  margin: 0;
+}
+
+.games-blocks .block .header .text p {
+  font-size: 25px;
+  line-height: 34px;
+}
+
+.games-blocks .block .rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  position: relative;
+  margin-top: 29px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.games-blocks .block .rating p {
+  position: absolute;
+  left: 0;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.games-blocks .block .rating span {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+  padding-right: 10px;
+}
+
+.games-blocks .block .payments {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 20px;
+}
+
+.games-blocks .block .payments p {
+  color: rgba(63, 63, 63, 0.7);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.games-blocks .block .payments .more {
+  width: 40px;
+  height: 24px;
+  background-color: #EAECEF;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  border-radius: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.games-blocks .block .line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  margin-top: 24px;
+}
+
+.games-blocks .block .line .dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  background-color: #502AC8;
+}
+
+.games-blocks .block .line hr {
+  border: 2px solid #502AC8;
+  opacity: 100%;
+  width: 98%;
+  position: absolute;
+  left: 2px;
+}
+
+.games-blocks .block .content {
+  margin: 20px 0px;
+}
+
+.games-blocks .block .content-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.games-blocks .block .content-row p {
+  margin-left: 12px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.games-blocks .block .purple-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 25px;
+  width: 100%;
+  height: 64px;
+  border-radius: 12px;
+  font-family: 'Black Han Sans', sans-serif;
+  color: #F6FF6E;
+  font-size: 30px;
+  line-height: 37px;
+  background-color: #502AC8;
+  border: none;
+  border-bottom: 5px solid #3C1F98;
 }
 /*# sourceMappingURL=style.css.map */
