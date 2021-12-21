@@ -225,6 +225,7 @@ header {
     background: url(../img/games/bue-bg.png) center no-repeat;
     text-align: center;
     padding-top: 170px;
+    
     &-banner {
         margin: 0 auto;
         background: url(../img/games/feautes-bg-clean.png) center no-repeat;
@@ -331,3 +332,267 @@ header {
         }
     }
 }
+footer {
+    background-color: #1D1D24;
+    .footer {
+        &-top {
+            margin-top: 110px;
+            padding-bottom: 63px;
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid rgba(135, 142, 168, .2);
+            .first-block {
+                position: relative;
+                display: flex;
+                width: 48%;
+                background: url(../img/footer/footer-offer-bg.png) center no-repeat;
+                background-size: cover;
+                padding: 20px 23px;
+                border-radius: 16px;
+                h1 {
+                    font-family: 'Black Han Sans', sans-serif;
+                    font-size: 28px;
+                    line-height: 40px;
+                    width: 345px;
+                    color: #fff;
+                    -webkit-text-stroke: 2px #FF4A51;
+                }
+                img {
+                    position: absolute;
+                    top: -45px;
+                    right: 0;
+                }
+            }
+            .second-block {
+                width: 48%;
+                .inp {
+                    height: 56px;
+                    width: 296px;
+                    margin-bottom: 22px;
+                    border-radius: 12px;
+                    padding-left: 16px;
+                    font-size: 16px;
+                    line-height: 22px;
+                    font-weight: 400;
+                    border: none;
+                    outline: none;
+                    &::placeholder {
+                        font-size: 16px;
+                        line-height: 22px;
+                        font-weight: 400;
+                        color: #3F3F3F;
+                        opacity: 100%;
+                    }
+                }
+                .red-btn {
+                    font-family: 'Black Han Sans', sans-serif;
+                    font-size: 22px;
+                    line-height: 28px;
+                    color: #fff;
+                    border-radius: 12px;
+                    width: 240px;
+                    height: 58px;
+                    background-color: #FF4A51;
+                    border: none;
+                    border-bottom: 4px solid #CF1B22;
+                    margin-left: 24px;
+                }
+                
+                .checkbox {    
+                    label {
+                        color: #fff;
+                        font-size: 14px;
+                        line-height: 19px;
+                        padding-left: 9px;
+                    }
+                    input[type="checkbox"]::before {
+                        display: none;
+                      
+                        transform-origin: bottom left;
+                        clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+                    }
+                }
+                p {
+                    margin-top: 13px;
+                    font-size: 14px;
+                    line-height: 19px;
+                    color: #fff;
+                }
+            }
+        }
+        &-middle {
+            padding-top: 56px;
+            padding-bottom: 61px;
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid rgba(135, 142, 168, .2);
+            margin-bottom: 55px;
+            .first-block {
+                display: flex;
+                align-content: center;
+                width: 46%;
+                h1 {
+                    font-family: 'Black Han Sans', sans-serif;
+                    font-size: 34px;
+                    line-height: 40px;
+                    width: 372px;
+                    color: #fff;
+                    margin: 0;
+                    margin-left: 30px;
+                }
+            }
+            .second-block {
+                display: flex;
+                width: 52%;
+                justify-content: space-between;
+                ul {
+                    li {
+                        a {
+                            font-size: 16px;
+                            line-height: 24px;
+                            color: #fff;
+                            text-decoration: none;
+                        }
+                        margin-bottom: 8px;
+
+                        &::marker {
+                            color: #FF4A51;
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            }
+        }
+        &-bottom {
+            font-size: 12px;
+            line-height: 24px;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 45px;
+            p {
+                color: #878EA8;
+                opacity: 0.6;
+                width: 60%;
+            }
+            .companies {
+                width: 30%;
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                p {
+                    margin-top: 18px;
+                    width: 100%;
+                    text-align: right;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    main {
+        background: url(../img/Mobile/top-bg.png);
+        height: 550px;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 92%);
+
+        header {
+            padding-bottom: 0px;
+            nav {
+                display: none;
+            }
+        }
+        .main {
+            .title {
+                font-size: 64px;
+                line-height: 75px;
+                word-break: break-word;
+                width: 100%;
+            }
+            .sub-title {
+                font-size: 15px;
+                color: #fff;
+                text-decoration: none;
+            }
+        }
+    }
+    .games {
+        height: auto;
+        &-header {
+            align-items: flex-start;
+            embed {
+                width: 36px;
+                margin-right: 12px;
+            }
+            .descr {
+                h3 {
+                    font-size: 25px;
+                }
+                p {
+                    font-size: 16px;
+                    position: absolute;
+                    left: 20px;
+                    width: 90%;
+                }
+            }
+        }
+        &-blocks {
+            margin-top: 130px;
+            display: flex;
+            flex-direction: column;
+            .block {
+                margin-bottom: 49px;
+            }
+        }
+    }
+    .play {
+        background-size: cover;
+        padding-top: 70px;
+        &-banner {
+            height: auto;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            background: url(../img/Mobile/feautres-bg-clean.png) center no-repeat;
+            background-size: cover;
+            align-items: center;
+            border: 3px solid #6DCB60;
+            padding: 43px;
+            .women {
+                display: none;
+            }
+            .red-text {
+                margin: 0;
+            }
+            &_block {
+                p {
+                    margin: 0;
+                }
+                margin-top: 38px;
+            }
+        }
+        &-title {
+            text-align: left;
+            h1 {
+                font-size: 25px;
+                line-height: 25px;
+                margin-bottom: 5px;
+            }
+            p {
+                font-size: 16px;
+                line-height: 28px;
+            }
+        }
+    }
+    footer {
+        .footer {
+            &-top {
+
+                flex-direction: column;
+                .first-block {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+  }
