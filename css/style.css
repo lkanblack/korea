@@ -3,6 +3,14 @@
   color: #262626;
 }
 
+.active {
+  display: block !important;
+}
+
+.rotate {
+  rotate: 180deg;
+}
+
 main {
   background: url(../img/top-bg.png) center no-repeat;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
@@ -440,6 +448,10 @@ header nav .nav-item a {
   margin-bottom: 129px;
 }
 
+.play-gifts .gift .arrow {
+  display: none;
+}
+
 .play-gifts .gift img {
   position: absolute;
   top: -80px;
@@ -462,6 +474,12 @@ header nav .nav-item a {
   font-size: 15px;
   line-height: 24px;
   font-weight: 400;
+  list-style-image: url(../img/checkbox.svg);
+}
+
+.play-gifts .gift ul li::marker {
+  position: absolute;
+  top: 5px;
 }
 
 footer {
@@ -490,6 +508,10 @@ footer .footer-top .first-block {
   background-size: cover;
   padding: 20px 23px;
   border-radius: 16px;
+}
+
+footer .footer-top .first-block .mob-tls {
+  display: none;
 }
 
 footer .footer-top .first-block h1 {
@@ -790,15 +812,129 @@ footer .footer-bottom .companies p {
     font-size: 16px;
     line-height: 28px;
   }
+  .play-gifts .gift h3 {
+    display: inline;
+  }
+  .play-gifts .gift .arrow {
+    display: inline;
+    float: right;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+  }
+  .play-gifts .gift ul {
+    display: none;
+  }
   footer .footer-top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background: url(../img/Mobile/subscribe-bg.png) center no-repeat;
+    background-size: cover;
+    border-radius: 16px;
+    flex-direction: column;
+    padding-bottom: 18px;
+  }
+  footer .footer-top .first-block {
+    width: 100%;
+    height: auto;
+    background: none;
+    text-align: center;
+    padding: 18px 24px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  footer .footer-top .first-block {
+  footer .footer-top .first-block .mob-tls {
+    display: block;
+    position: relative;
+    top: 0;
+  }
+  footer .footer-top .first-block h1 {
+    font-size: 21px;
+    line-height: 26px;
+    margin-bottom: 18px;
+  }
+  footer .footer-top .first-block img {
+    display: none;
+  }
+  footer .footer-top .second-block {
     width: 100%;
-    height: auto;
+    text-align: center;
+    padding: 0 24px;
+  }
+  footer .footer-top .second-block .inp {
+    width: 100%;
+  }
+  footer .footer-top .second-block .red-btn {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 28px;
+  }
+  footer .footer-top .second-block .checkbox, footer .footer-top .second-block p {
+    text-align: left;
+  }
+  footer .footer-middle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 33px 0px;
+    margin-bottom: 33px;
+  }
+  footer .footer-middle .first-block {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 23px;
+  }
+  footer .footer-middle .first-block h1 {
+    font-size: 24px;
+    line-height: 30px;
+    margin-left: 15px;
+  }
+  footer .footer-middle .second-block {
+    width: 100%;
+  }
+  footer .footer-middle .second-block ul {
+    margin-bottom: 0;
+  }
+  footer .footer-bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .footer-bottom p {
+    width: 100%;
+    margin: 0;
+  }
+  footer .footer-bottom .companies {
+    width: 100%;
+    margin-top: 36px;
+  }
+  footer .footer-bottom .companies p {
+    margin-top: 31px;
+    text-align: left;
   }
 }
 /*# sourceMappingURL=style.css.map */

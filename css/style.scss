@@ -2,6 +2,12 @@
     font-family: 'Noto Sans', sans-serif;
     color : #262626;
 }
+.active {
+    display: block !important;
+}
+.rotate {
+    rotate: 180deg;
+}
 main {
     background: url(../img/top-bg.png) center no-repeat;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
@@ -302,6 +308,9 @@ header {
         justify-content: space-between;
         margin-top: 134px;
         .gift {
+            .arrow {
+                display: none;
+            }
             background-color: #FFFAD1;
             position: relative;
             width: 352px;
@@ -323,10 +332,16 @@ header {
             }
             ul {
                 margin: 0;
+                
                 li {
                     font-size: 15px;
                     line-height: 24px;
                     font-weight: 400;
+                    list-style-image: url(../img/checkbox.svg);
+                    &::marker {
+                        position: absolute;
+                        top: 5px;
+                    }
                 }
             }
         }
@@ -349,6 +364,9 @@ footer {
                 background-size: cover;
                 padding: 20px 23px;
                 border-radius: 16px;
+                .mob-tls {
+                    display: none;
+                }
                 h1 {
                     font-family: 'Black Han Sans', sans-serif;
                     font-size: 28px;
@@ -582,15 +600,111 @@ footer {
                 line-height: 28px;
             }
         }
+        &-gifts {
+            .gift {
+                h3 {
+                    display: inline;
+                }
+                .arrow {
+                    display: inline;
+                    float: right;
+                    cursor: pointer;
+                    width: 30px;
+                    height: 30px;
+                    text-align: center;
+                }
+                ul {
+                    display: none;
+                }
+            }
+        }
     }
     footer {
         .footer {
             &-top {
-
+                display: flex;
                 flex-direction: column;
+                background: url(../img/Mobile/subscribe-bg.png) center no-repeat ;
+                background-size: cover;
+                border-radius: 16px;
+                flex-direction: column;
+                padding-bottom: 18px;
                 .first-block {
                     width: 100%;
                     height: auto;
+                    background: none;
+                    text-align: center;
+                    padding: 18px 24px;
+                    display: flex;
+                    flex-direction: column;
+                    .mob-tls {
+                        display: block;
+                        position: relative;
+                        top: 0;
+                    }
+                    h1 {
+                        font-size: 21px;
+                        line-height: 26px;
+                        margin-bottom: 18px;
+                    }
+                    img {
+                        display: none;
+                    }
+                }
+                .second-block {
+                    width: 100%;
+                    text-align: center;
+                    padding: 0 24px;
+                    .inp {
+                        width: 100%;
+                    }
+                    .red-btn {
+                        width: 100%;
+                        margin-left: 0;
+                        margin-bottom: 28px;
+                    }
+                    .checkbox, p {
+                        text-align: left;
+                    }
+                }
+            }
+            &-middle {
+                display: flex;
+                flex-direction: column;
+                padding: 33px 0px;
+                margin-bottom: 33px;
+                .first-block {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 23px;
+                    h1 {
+                        font-size: 24px;
+                        line-height: 30px;
+                        margin-left: 15px;
+                    }
+                }
+                .second-block {
+                    width: 100%;
+                    ul {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+            &-bottom {
+                display: flex;
+                flex-direction: column;
+                p {
+                    width: 100%;
+                    margin: 0;
+                }
+                .companies {
+                    width: 100%;
+                    margin-top: 36px;
+                    p {
+                        margin-top: 31px;
+                        text-align: left;
+                    }
                 }
             }
         }
