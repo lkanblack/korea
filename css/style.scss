@@ -517,6 +517,16 @@ footer {
         padding-left: 120px;
         padding-right: 120px;
     }
+    .games {
+        &-blocks {
+            justify-content: space-around;
+        }
+    }
+    .play {
+        &-gifts {
+            justify-content: space-around;
+        }
+    }
 }
 
 @media only screen and (max-width: 1199px) {

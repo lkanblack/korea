@@ -719,6 +719,14 @@ footer .footer-bottom .companies p {
     padding-left: 120px;
     padding-right: 120px;
   }
+  .games-blocks {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .play-gifts {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
 }
 
 @media only screen and (max-width: 1199px) {
