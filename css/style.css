@@ -714,6 +714,13 @@ footer .footer-bottom .companies p {
   text-align: right;
 }
 
+@media only screen and (min-width: 1441px) {
+  .container-fluid {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+}
+
 @media only screen and (max-width: 1199px) {
   footer .footer-top .first-block h1 {
     z-index: 1;
