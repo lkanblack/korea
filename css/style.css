@@ -100,8 +100,8 @@ header nav .nav-item a {
 .games {
   background-color: #FF4A51;
   margin-top: -100px;
-  padding: 96px 0px;
-  height: 1300px;
+  padding: 96px 0px 46px 0px;
+  height: auto;
 }
 
 .games-header {
@@ -139,6 +139,8 @@ header nav .nav-item a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .games-blocks .block {
@@ -146,6 +148,7 @@ header nav .nav-item a {
   height: auto;
   background-color: #fff;
   border-radius: 24px;
+  margin-bottom: 50px;
 }
 
 .games-blocks .block p {
@@ -324,6 +327,7 @@ header nav .nav-item a {
 
 .play {
   background: url(../img/games/bue-bg.png) center no-repeat;
+  background-size: cover;
   text-align: center;
   padding-top: 170px;
 }
@@ -331,7 +335,8 @@ header nav .nav-item a {
 .play-banner {
   margin: 0 auto;
   background: url(../img/games/feautes-bg-clean.png) center no-repeat;
-  width: 1200px;
+  background-size: cover;
+  width: auto;
   height: 220px;
   display: inline-block;
   border-radius: 20px;
@@ -340,6 +345,7 @@ header nav .nav-item a {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  border: 3px solid #6DCB60;
 }
 
 .play-banner .red-text {
@@ -708,6 +714,62 @@ footer .footer-bottom .companies p {
   text-align: right;
 }
 
+@media only screen and (max-width: 1199px) {
+  footer .footer-top .first-block h1 {
+    z-index: 1;
+  }
+  footer .footer-top .first-block img {
+    top: auto;
+    bottom: 0;
+  }
+  footer .footer-top .second-block {
+    width: 100%;
+    text-align: center;
+    padding: 0 24px;
+  }
+  footer .footer-top .second-block .inp {
+    width: 100%;
+  }
+  footer .footer-top .second-block .red-btn {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 28px;
+  }
+  footer .footer-top .second-block .checkbox, footer .footer-top .second-block p {
+    text-align: left;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .games-blocks {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .play-gifts {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+@media only screen and (max-width: 790px) {
+  .play-banner {
+    height: auto;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .play-banner .red-text {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 24px;
+  }
+  .play-banner .women {
+    display: none;
+  }
+  .play-banner_block {
+    margin-bottom: 24px;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   main {
     background: url(../img/Mobile/top-bg.png);
@@ -811,6 +873,11 @@ footer .footer-bottom .companies p {
   .play-title p {
     font-size: 16px;
     line-height: 28px;
+  }
+  .play-gifts {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .play-gifts .gift h3 {
     display: inline;
